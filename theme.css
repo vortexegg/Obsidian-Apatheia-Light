@@ -1413,8 +1413,8 @@ Plugins
   --ap-color-dp5: hsl(249, 15%, 65%);
   --ap-color-dp6: hsl(249, 12%, 52%);
   --ap-color-dp7: hsl(249, 12%, 40%);
-  --ap-color-dp8: hsl(249, 12%, 28%);
-  --ap-color-dp9: hsl(249, 12%, 20%);
+  --ap-color-dp8: hsl(249, 12%, 32%);
+  --ap-color-dp9: hsl(249, 12%, 24%);
   --ap-color-dp10: hsl(249, 15%, 12%);
   --ap-color-dp11: hsl(249, 18%, 8%);
   /* Accent colors darkened to ~38% lightness for contrast on light bg */
@@ -1429,10 +1429,10 @@ Plugins
   --ap-color-strong: hsl(342, 55%, 38%);
   --ap-color-quote: hsl(342, 55%, 38%);
   --ap-color-italic: hsl(342, 55%, 38%);
+  color-scheme: light;
   /* Tag colors for light bg */
   --ap-color-tag-background: hsl(249, 30%, 83%);
   --ap-color-tag-text: hsl(249, 30%, 22%);
-  color-scheme: light;
   --highlight-mix-blend-mode: multiply;
   --mono-rgb-0: 255, 255, 255;
   --mono-rgb-100: 0, 0, 0;
@@ -1480,7 +1480,7 @@ Plugins
   --icon-color-focused: var(--color-accent);
   --text-normal: hsl(249, 20%, 10%);
   --text-muted: hsl(249, 15%, 40%);
-  --text-faint: hsl(249, 12%, 60%);
+  --text-faint: hsl(249, 12%, 50%);
   --text-accent: hsl(var(--accent-h), var(--accent-s), var(--accent-d));
   --text-accent-hover: hsl(var(--accent-h), var(--accent-s), calc(var(--accent-d) + 12%));
   --h1-color: var(--ap-h1);
@@ -1504,7 +1504,7 @@ Plugins
   --link-external-decoration: underline;
   --link-decoration: underline;
   --scrollbar-bg: hsl(249, 20%, 89%);
-  --scrollbar-thumb-bg: hsl(249, 15%, 76%);
+  --scrollbar-thumb-bg: hsl(249, 15%, 65%);
   --scrollbar-active-thumb-bg: hsla(var(--accent-h), var(--accent-s), var(--accent-l), 0.4);
   --base-h: var(--ap-base0-h);
   --base-s: var(--ap-base0-s);
