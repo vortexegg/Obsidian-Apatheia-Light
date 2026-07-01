@@ -7,3 +7,6 @@ package-lock.json
 
 # Mac
 .DS_Store
+
+# Superpowers brainstorming sessions
+.superpowers/

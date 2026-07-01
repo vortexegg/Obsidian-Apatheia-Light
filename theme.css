@@ -1404,10 +1404,38 @@ Plugins
             Fonts            
 --------------------------------------*/
 .theme-light {
-  color-scheme: dark;
-  --highlight-mix-blend-mode: lighten;
-  --mono-rgb-0: 0, 0, 0;
-  --mono-rgb-100: 255, 255, 255,;
+  /* Light palette: inverted depth scale, purple-tint hue 249° */
+  --ap-color-dp0: hsl(249, 20%, 97%);
+  --ap-color-dp1: hsl(249, 20%, 93%);
+  --ap-color-dp2: hsl(249, 20%, 89%);
+  --ap-color-dp3: hsl(249, 18%, 85%);
+  --ap-color-dp4: hsl(249, 18%, 80%);
+  --ap-color-dp5: hsl(249, 15%, 65%);
+  --ap-color-dp6: hsl(249, 12%, 52%);
+  --ap-color-dp7: hsl(249, 12%, 40%);
+  --ap-color-dp8: hsl(249, 12%, 32%);
+  --ap-color-dp9: hsl(249, 12%, 24%);
+  --ap-color-dp10: hsl(249, 15%, 12%);
+  --ap-color-dp11: hsl(249, 18%, 8%);
+  /* Accent colors darkened to ~38% lightness for contrast on light bg */
+  --ap-red: hsl(342, 55%, 38%);
+  --ap-green: hsl(108, 22%, 36%);
+  --ap-blue: hsl(210, 45%, 35%);
+  --ap-purple: hsl(294, 35%, 38%);
+  --ap-aqua: hsl(181, 40%, 35%);
+  --ap-yellow: hsl(46, 50%, 35%);
+  --ap-orange: hsl(12, 45%, 40%);
+  /* These are hardcoded in :root (not var refs), so must be overridden here */
+  --ap-color-strong: hsl(342, 55%, 38%);
+  --ap-color-quote: hsl(342, 55%, 38%);
+  --ap-color-italic: hsl(342, 55%, 38%);
+  color-scheme: light;
+  /* Tag colors for light bg */
+  --ap-color-tag-background: hsl(249, 30%, 83%);
+  --ap-color-tag-text: hsl(249, 30%, 22%);
+  --highlight-mix-blend-mode: multiply;
+  --mono-rgb-0: 255, 255, 255;
+  --mono-rgb-100: 0, 0, 0;
   --color-red-rgb: 251, 70, 76,;
   --color-red: #fb464c;
   --color-green-rgb: 68, 207, 110,;
@@ -1450,8 +1478,9 @@ Plugins
   --tag-background: var(--ap-color-tag-background);
   --tag-color: var(--ap-color-tag-text);
   --icon-color-focused: var(--color-accent);
-  --text-muted: hsl(var(--base-h), var(--base-s), calc(var(--base-d) + 65%));
-  --text-faint: hsl(var(--base-h), var(--base-s), calc(var(--base-d) + 30%));
+  --text-normal: hsl(249, 20%, 10%);
+  --text-muted: hsl(249, 15%, 40%);
+  --text-faint: hsl(249, 12%, 50%);
   --text-accent: hsl(var(--accent-h), var(--accent-s), var(--accent-d));
   --text-accent-hover: hsl(var(--accent-h), var(--accent-s), calc(var(--accent-d) + 12%));
   --h1-color: var(--ap-h1);
@@ -1474,8 +1503,8 @@ Plugins
   --checkbox-radius: 30%;
   --link-external-decoration: underline;
   --link-decoration: underline;
-  --scrollbar-bg: hsla(var(--base-h), var(--base-s), calc(var(--base-l) + 15%), 1);
-  --scrollbar-thumb-bg: hsla(var(--base-h), var(--base-s), calc(var(--base-l) + 15%), 1);
+  --scrollbar-bg: hsl(249, 20%, 89%);
+  --scrollbar-thumb-bg: hsl(249, 15%, 65%);
   --scrollbar-active-thumb-bg: hsla(var(--accent-h), var(--accent-s), var(--accent-l), 0.4);
   --base-h: var(--ap-base0-h);
   --base-s: var(--ap-base0-s);
